@@ -11,6 +11,11 @@ if __name__ == '__main__':
 
     print 'main'
 
+    # 数字
+    # test_num_features()
+
+    # 字符串
     test_string_features()
-    test_num_features()
-    test_list_features()
+
+    # 列表
+    # test_list_features()

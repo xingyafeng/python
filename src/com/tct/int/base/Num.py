@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: cp1252 -*-
+# -*- coding: UTF-8 -*-
 import logging
 
 '''

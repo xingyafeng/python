@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
 import logging
 from collections import deque
 
+# 列表是一个序列，用于顺序的存储数据的，也可以说是顺序存储数据的一个容器。
 def test_list_features():
     # type: () -> test_list_features()
     """
@@ -20,6 +24,7 @@ def test_list_features():
     print a
     a.pop()
     print a
+    print a + [0, 0, 0, 0, 0]
 
     quene = deque(["a", "b", "c"])
     quene.append("d")
