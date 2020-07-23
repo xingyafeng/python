@@ -8,6 +8,7 @@ from collections import deque
 def test_list_features():
     # type: () -> test_list_features()
     """
+    通常在定义空列表的时候使用[]，在定义一个迭代对象的时候使用list()工厂函数
     :rtype: object
     """
     logging.debug("test list ...")

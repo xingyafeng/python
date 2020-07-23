@@ -88,6 +88,11 @@ def counter():
     return inc
 
 
+# 获取列表的第二个元素
+def takeSecond(elem):
+    return elem[1]
+
+
 if __name__ == '__main__':
 
     c = counter()
@@ -171,6 +176,8 @@ if __name__ == '__main__':
     # 5. 多个关键字参数
 
     # 疑虑： 没看明白？如何执行的呢？
+    # 如何将列表的每个元素传给key的呢？不太了解，大概　self起到的左右
     pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+    pairs.sort(key=takeSecond)
     pairs.sort(key=lambda pair: pair[1])
     print pairs
