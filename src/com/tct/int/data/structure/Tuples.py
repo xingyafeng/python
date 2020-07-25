@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+from timeit import Timer
 
 def test_tuples():
     """
@@ -25,4 +26,10 @@ def test_tuples():
 
 
 if __name__ == '__main__':
-    test_tuples()
+    # test_tuples()
+
+    print Timer('[1, 2, 3, 4]').timeit()
+    print Timer('(1, 2, 3, 4,)').timeit()
+    print Timer('a=100; b=1000').timeit()
+    print Timer('a,b = 100, 1000').timeit()
+
