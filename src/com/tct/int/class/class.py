@@ -3,16 +3,20 @@
 
 class MyClass:
     id = '1001'
+    __Name = 'test'
 
     def __init__(self, name):
+        print self.__Name
         self.name = name
         self.tricks = list()
 
     @staticmethod
     def f():
+        print MyClass.__Name
         return 'hello python'
 
     def add_trick(self, trick):
+        print self.__Name
         self.tricks.append(trick)
 
 
@@ -39,4 +43,7 @@ if __name__ == '__main__':
     __print()
     y.id = '10'
     __print()
+    x.f()
+    y.f()
 
+    # print MyClass.__Name
