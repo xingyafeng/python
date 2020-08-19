@@ -3,7 +3,7 @@
 
 class MyClass:
     id = '1001'
-    __Name = 'test'
+    __Name = 'ttt'
 
     def __init__(self, name):
         print self.__Name
@@ -46,4 +46,12 @@ if __name__ == '__main__':
     x.f()
     y.f()
 
+    x.age = 100
+    print x.age
+    # del x.age
     # print MyClass.__Name
+
+    print hasattr(x, 'age')
+    print getattr(x, 'age')
+    print setattr(x, 'age', 200)
+    print delattr(x, 'age')
